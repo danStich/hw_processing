@@ -6,12 +6,11 @@ do
     mv "$file" "${file/_attempt_*/.R}"
 done
 
-for file in Lab*_*.R
+for file in HW*_*.R
 do
-    mv "$file" "${file/Lab*_/}"
+    mv "$file" "${file/HW*_/}"
 done
 
-#for file in *.R
-#do
-#    mv "$file" "${file/.R/.Rmd}"
-#done
+for file in *.docx; do
+    mv "$file" "HW1_$file"
+done
